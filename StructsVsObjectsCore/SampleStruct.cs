@@ -12,7 +12,7 @@ namespace StructsVsObjects
        internal int j;
         internal int z;
 
-    public SampleStruct(int i, int j, int z)
+        public SampleStruct(int i, int j, int z)
         {
             this.i = i;
             this.j = j;

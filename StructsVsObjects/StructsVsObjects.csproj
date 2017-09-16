@@ -62,6 +62,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ISampleStruct.cs" />
     <Compile Include="StructStatic.cs" />
     <Compile Include="ClassStatic.cs" />
     <Compile Include="Program.cs" />
