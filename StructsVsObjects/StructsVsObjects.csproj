@@ -62,7 +62,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ISampleStruct.cs" />
+    <Compile Include="ClassLargeStatic.cs" />
+    <Compile Include="SampleLargeClass.cs" />
+    <Compile Include="SampleLargeStruct.cs" />
+    <Compile Include="StructLargeStatic.cs" />
     <Compile Include="StructStatic.cs" />
     <Compile Include="ClassStatic.cs" />
     <Compile Include="Program.cs" />

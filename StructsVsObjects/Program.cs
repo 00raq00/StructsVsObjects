@@ -16,7 +16,7 @@ namespace StructsVsObjects
       {
         int readedValue = int.MaxValue / 300;
 
-        if (args.Length==0 || string.IsNullOrEmpty(args[0]) || args[0].Equals("Class"))
+        if (args.Length == 0 || string.IsNullOrEmpty(args[0]) || args[0].Equals("Class"))
         {
 
           GC.Collect(GC.MaxGeneration);
@@ -35,7 +35,27 @@ namespace StructsVsObjects
 
           Console.WriteLine(StructStatic.SampleStruct(readedValue, 30));
         }
-        
+
+        if (args.Length == 0 || string.IsNullOrEmpty(args[0]) || args[0].Equals("ClassLarge"))
+        {
+
+          GC.Collect(GC.MaxGeneration);
+          GC.WaitForFullGCComplete();
+
+
+          Console.WriteLine(ClassLargeStatic.SampleClass(readedValue, 30));
+
+        }
+        if (args.Length == 0 || string.IsNullOrEmpty(args[0]) || args[0].Equals("StructLarge"))
+        {
+
+          // Console.ReadKey();
+          GC.Collect(GC.MaxGeneration);
+          GC.WaitForFullGCComplete();
+
+          Console.WriteLine(StructLargeStatic.SampleStruct(readedValue, 30));
+        }
+
       }
     }
   }

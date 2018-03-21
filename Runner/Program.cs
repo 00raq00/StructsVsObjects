@@ -16,8 +16,14 @@ namespace Runner
       // memory usage of the process.
       memoryTester("StructsVsObjects.exe", "Class");
       memoryTester("StructsVsObjects.exe", "Struct");
+      memoryTester("StructsVsObjects.exe", "ClassLarge");
+      memoryTester("StructsVsObjects.exe", "StructLarge");
+
+
       memoryTester("dotnet", "netcoreapp2.0\\StructsVsObjectsCore.dll Class");
       memoryTester("dotnet", "netcoreapp2.0\\StructsVsObjectsCore.dll Struct");
+      memoryTester("dotnet", "netcoreapp2.0\\StructsVsObjectsCore.dll ClassLarge");
+      memoryTester("dotnet", "netcoreapp2.0\\StructsVsObjectsCore.dll StructLarge");
 
       Console.ReadKey();
     }
